@@ -15,5 +15,3 @@ if (name == "" || name == null) {
     alert("Name must be filled out")}
 else {
  var message = ['Hello, ' + name + '!']; alert(message)}
-
-// greeting('Stephanie')
