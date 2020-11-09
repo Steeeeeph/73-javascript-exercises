@@ -8,9 +8,19 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+// function myfunction(){
+var age = prompt("Hey! What's your age?");
+var gender = prompt("And your gender?");
+var location = prompt("Where are you living?");
 
-(function() {
+if (age&&gender&&location != null){
+    confirm("Are you "+age+" years old, "+gender+" and you live in"+location+"?")
+}
+else {
+    alert("Please fill in all forms!")
+}
 
-    // your code here
+// if (confirm("true"){txt= "Thanks for sharing!"})
+// else {txt= "Please complete the form."}
+// }
 
-})();
