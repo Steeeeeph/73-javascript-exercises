@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var name = prompt("What's your name?")
 
-    // your code here
+if (name == "" || name == null) {
+    alert("Name must be filled out")}
+else {
+ var message = ['Hello, ' + name + '!']; alert(message)}
 
-})();
+// greeting('Stephanie')
