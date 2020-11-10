@@ -9,12 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+// function() {
 
-    document.getElementById("run").addEventListener("click", function() {
-
+document.getElementById("run").addEventListener("click", function(squareNumber) {
         // your code here
+    
+    let text = '';
+    let i= 1;
+    let maxSquareNo = 21; 
 
-    });
+    while (i*i <= maxSquareNo) {
+        text += i*i+', '; i++;
+    }
 
-})();
+    alert('The square numbers between 1 and 21 are: '+text)
+})
+
+// for(let i=0; i<22; i++){ alert(squareNumber[i]*squareNumber[i]) };
+// };
