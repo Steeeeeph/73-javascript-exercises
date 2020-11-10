@@ -9,12 +9,33 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
+// (() => {
     // to get the value of an input: document.getElementById("element-id").value
+let opOne = +document.getElementById("op-one").value;
+let opTwo = +document.getElementById("op-two").value;
 
-    const performOperation = operation => {
-        // perform the operation
+console.log(opOne, opTwo);
+
+const performOperation = operation => {
+    // perform the operation
+    switch(operation){
+        case 'addition':
+            prompt(opOne+opTwo);
+                    break;
+        case 'substraction':
+            prompt(opOne-opTwo);
+            break;
+        case 'multiplication':
+            prompt(opOne*opTwo);
+            break;
+        case 'division':
+            prompt(opOne/opTwo);
+            break;
+        default:
+            prompt('Invalid');
+            break;
     };
+};
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
         $btn.addEventListener(
@@ -22,4 +43,4 @@
             () => (performOperation($btn.id), false),
         ),
     );
-})();
+// })();
