@@ -9,14 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
     // to get the value of an input: document.getElementById("element-id").value
+    var series = document.getElementById("numbers").value.split(", ");
+    console.log(series);
 
     document.getElementById("run").addEventListener("click", function() {
-
         // your code here
-
+    series.sort(function(a,b){return b-a})
+    alert(series)
     });
 
-})();
