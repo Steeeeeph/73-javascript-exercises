@@ -9,22 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+// function calc() {
     // to get the value of an input: document.getElementById("element-id").value
+let opOne = +document.getElementById("op-one").value;
+let opTwo = +document.getElementById("op-two").value;
 
-    document.getElementById("addition").addEventListener("click", function() {
+    document.getElementById("addition").addEventListener("click", function sum() {
         // perform an addition
+        alert(opOne + opTwo);
     });
 
-    document.getElementById("substraction").addEventListener("click", function() {
+    document.getElementById("substraction").addEventListener("click", function subtract() {
         // perform an substraction
+        alert(opOne - opTwo);
     });
 
-    document.getElementById("multiplication").addEventListener("click", function() {
+    document.getElementById("multiplication").addEventListener("click", function multiply() {
         // perform an multiplication
+        alert(opOne * opTwo);
     });
 
-    document.getElementById("division").addEventListener("click", function() {
+    document.getElementById("division").addEventListener("click", function divide() {
         // perform an division
+        alert(opOne / opTwo);
     });
-})();
+// };

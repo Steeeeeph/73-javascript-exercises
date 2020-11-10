@@ -13,11 +13,11 @@ var age = prompt("Hey! What's your age?");
 var gender = prompt("And your gender?");
 var location = prompt("Where are you living?");
 
-if (age&&gender&&location != null){
-    confirm("Are you "+age+" years old, "+gender+" and you live in"+location+"?")
+if (age && gender && location != null){
+    alert("Are you "+age+" years old, "+gender+" and you live in"+location+"?");
 }
 else {
-    alert("Please fill in all forms!")
+    alert("Please fill in all forms!");
 }
 
 // if (confirm("true"){txt= "Thanks for sharing!"})
