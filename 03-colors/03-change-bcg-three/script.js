@@ -15,14 +15,14 @@
 //  console.log(randomColor);
 
  function randomNum(){
-     return Math.floor(Math.random()*16777215).toString(16);
+     return Math.floor(Math.random()*16777215).toString(16); //https://css-tricks.com/snippets/javascript/random-hex-color/
  }
  let randomColor ='#'+ randomNum();
- console.log(randomColor)
-document.getElementById("run").addEventListener('click', function(){
+//  console.log(randomColor)
+document.getElementById("run").addEventListener('click', function() {
  document.body.style.backgroundColor = randomColor;
-   
-})
+});
+
 /*
  function getRandomNumberBetween(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
