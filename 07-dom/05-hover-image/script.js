@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    //resusable directory of img
+let x = document.querySelector('img');
 
+    // not needed variable
+// let beforeHover = x.getAttribute('src');
+
+    // variable containing the source of data-hover attribute to reuse later
+let onHover = x.getAttribute('data-hover');
+
+// console.log(beforeHover);
+// console.log(onHover);
+
+x.addEventListener('mouseover', function (){
+    x.src = onHover;
+});
 })();
