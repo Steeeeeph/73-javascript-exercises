@@ -9,7 +9,6 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
     const computers = [
         {id: "0001", available: false, user: "leny", os: "macOS"},
         {id: "0002", available: false, user: "Nicolas"},
@@ -26,5 +25,17 @@
         os: "linux",
         user: null,
     };
+
+    // console.log(computers[3]['available']);
+
+    // console.log(computers.length);
+
     // your code here
-})();
+document.getElementById("run").addEventListener("click", function () {
+    for (let i = 0; i < computers.length; i++) {
+
+        // overwrite computers with defaultProps and again with computers - spread operator -  https://flaviocopes.com/how-to-merge-objects-javascript/
+        computers[i] = {...defaultProps, ...computers[i]};
+    }
+    console.log(computers);
+});
