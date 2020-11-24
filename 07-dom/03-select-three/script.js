@@ -12,6 +12,7 @@
 (function() {
 
     // your code here
+    // repeating a loop over all .target
 const x = document.getElementsByClassName('target');
 for (let i = 0; i < x.length; i++) {
     x[i].innerHTML = "owned";
