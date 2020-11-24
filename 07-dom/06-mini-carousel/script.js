@@ -20,5 +20,21 @@
     ];
 
     // your code here
+// directory in var
+let x = document.querySelector('img');
+// source path in var
+let sourceImg = x.getAttribute('src');
+// iterator
+let i = 0;
 
+document.getElementById('next').addEventListener('click', function() {
+// image path to show after a click
+    x.src = gallery[i+1];
+// increasing the array index with 1
+    i+=1;
+// repeating the array for eternal clicking loop
+    if (i === gallery.length-1) {
+        return i = 0;
+    }
+});
 })();
