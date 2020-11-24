@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
-
+const x = document.getElementsByClassName('target');
+for (let i = 0; i < x.length; i++) {
+    x[i].innerHTML = "owned";
+}
 })();
+
+/* Stackoverflow:
+
+function myFunction()
+{
+x=document.getElementsByClassName("demo");  // Find the elements
+    for(var i = 0; i < x.length; i++){
+    x[i].innerText="Hello JavaScript!";    // Change the content
+    }
+
+}
+*/
