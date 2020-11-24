@@ -12,5 +12,6 @@
 (function() {
 
     // your code here
+    document.getElementById("target").textContent= "owned"
 
 })();
