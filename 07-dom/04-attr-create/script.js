@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
-
+    // your code here 
+    // (https://www.youtube.com/watch?v=a5T1MiQmgKQ)
+    // getting link from data-image attribute
+    let imageSrc = document.getElementById('source').getAttribute('data-image');
+    // creating <img>
+    let newImg = document.createElement('img');
+    // setting the src attribute of <img>
+    newImg.setAttribute('src', imageSrc);
+    // adding the tag with source under the right id
+    document.getElementById("target").appendChild(newImg);
+    // selecting the to be removed element
+    let tagSpan = document.getElementById("source");
+    // removing the span element by addressing the variable of to be deleted element  
+    tagSpan.parentNode.removeChild(tagSpan);
 })();
