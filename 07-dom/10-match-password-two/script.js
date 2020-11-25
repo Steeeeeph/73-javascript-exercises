@@ -13,4 +13,15 @@
 
     // your code here
 
+    const password1 = document.getElementById("pass-one").value;
+    const password2 = document.getElementById("pass-two").value;
+
+    document.getElementById("run").addEventListener('click', function () {
+        if (password1 != password2) {
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+
+        }
+    });
+
 })();
