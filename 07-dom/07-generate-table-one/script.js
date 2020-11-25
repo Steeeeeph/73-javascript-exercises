@@ -12,5 +12,27 @@
 (function() {
 
     // your code here
+    // path directory
+let x = document.getElementById('target');
+// creating <table> with 10 <tr>
+let table = document.createElement('table');
+// insert table in target
+x.appendChild(table);
+// insert rows in table
+let pathTable = document.querySelector('table');
+
+for (let i = 0; i < 10; i++) {
+    let row = document.createElement('tr');
+    let makeRow = pathTable.appendChild(row);
+}
 
 })();
+/* REPEATING AN HTML TAG
+
+for(var i=0; i < myWordLen; i++)
+{
+    var tr1 = document.createElement("hr");
+    var someEle = document.getElementById("someID");
+    someEle.appendChild(tr1);
+}
+*/
