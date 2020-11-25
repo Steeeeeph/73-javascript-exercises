@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
-
+    const password1 = document.getElementById('pass-one').value;
+    const password2 = document.getElementById('pass-two').value;
+   
+    document.getElementById("run").addEventListener('click', function() {
+        if (password1 != password2) {
+        //    document.querySelectorAll("#pass-one, #pass-two").style.borderColor = "red"; DOESNT WORK IDK WHY
+           document.getElementById("pass-one").style.borderColor = "red";
+           document.getElementById("pass-two").style.borderColor = "red";
+        }
+    });
+    
+// console.log(password1 + password2);
 })();
