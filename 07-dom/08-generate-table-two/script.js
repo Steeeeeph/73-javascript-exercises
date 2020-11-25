@@ -8,9 +8,23 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (function() {
-
     // your code here
 
+    let table;
+    table = "<table>";
+
+    for(let i= 1; i<= 10; i++) {
+        table +="<tr>";
+            for(let j = 1; j<= 10; j++){
+                table +="<td>" + i * j + "</td>";
+            }
+        table += "</tr>";
+    }
+
+    table += "</table>";
+    
+    document.getElementById("target").innerHTML = table;
+
 })();
+// https://www.youtube.com/watch?v=vfTv1eHygIc

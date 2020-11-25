@@ -12,7 +12,7 @@
 (function() {
 
     // your code here
-    // path directory
+// path directory
 let x = document.getElementById('target');
 // creating <table> with 10 <tr>
 let table = document.createElement('table');
