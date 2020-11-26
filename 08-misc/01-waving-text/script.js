@@ -12,5 +12,22 @@
 (function() {
 
     // your code here
-
+    const string = document.getElementById("target").textContent;
+    const characters = string.split("");
+    let positionZero = characters.filter(n){
+        return n % 5;
+    })
+    console.log(string);
+    console.log(characters);
+    let result = '';
+    for (let i=0; i < characters.length; i++){
+        if (i % 5 == 0) {
+            
+            result += '<span style="font-size:10px;">'+ characters[i]+'</span>';
+        } 
+        // result += '<span>'+ characters[i]+'</span>';
+    }
+    
+    document.getElementById("target").innerHTML = result;
 })();
+
