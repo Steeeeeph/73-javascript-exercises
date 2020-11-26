@@ -12,5 +12,37 @@
 (function() {
 
     // your code here
+    let i = 0;
+    let text = document.getElementById("target").textContent;
+    const speed = 100;
+    console.log(text);
+    function clearTarget () {
+        document.getElementById("target").innerText = '';
+
+    }
+    clearTarget();
+
+    function typeWriter () {
+        if (i < text.length) {
+            document.getElementById("target").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter()
 
 })();
+
+/*
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+*/
