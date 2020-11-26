@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    const slider = document.getElementById("slider");
+     /*   const phoneNumber = slider.value;
+        console.log(phoneNumber); */
+
+    slider.addEventListener('input', function(event) {
+
+        let value = event.target.value;
+        document.getElementById("target").innerText = 0 + value;
+    });
 
 })();

@@ -34,6 +34,11 @@
 })();
 
 /*
+function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+}
+
 var i = 0;
 var txt = 'Lorem ipsum dummy text blabla.';
 var speed = 50;
