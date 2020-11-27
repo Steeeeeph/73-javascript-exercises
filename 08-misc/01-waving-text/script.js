@@ -11,23 +11,35 @@
 
 (function() {
 
-    // your code here
-    const string = document.getElementById("target").textContent;
+    // get string
+    const target = document.getElementById("target");
+    const string = target.textContent;
+    // splitting the string into letters
     const characters = string.split("");
-    let positionZero = characters.filter(n){
-        return n % 5;
-    })
-    console.log(string);
-    console.log(characters);
+    let fontSize = 0;
+    let direction = 'up';
+        console.log(string);
+        console.log(characters);
     let result = '';
+
     for (let i=0; i < characters.length; i++){
-        if (i % 5 == 0) {
-            
-            result += '<span style="font-size:10px;">'+ characters[i]+'</span>';
-        } 
-        // result += '<span>'+ characters[i]+'</span>';
+        if (fontSize >= 4) {
+            direction = 'down';
+        } else if (fontSize <= 0) {
+            direction = 'up';
+        }
+        console.log(fontSize);
+
+        if (direction === 'up') {
+            fontSize++;
+        } else {
+            fontSize--;
+        }
+
+        result += '<span>' + characters[i].fontsize(fontSize) + '</span>';
+
+        // result += '<span style = "font-size: fontSize">'+ characters[i]+'</span>';
     }
-    
-    document.getElementById("target").innerHTML = result;
+    target.innerHTML = result;
 })();
 
