@@ -17,7 +17,7 @@ const currentMonth = d.getMonth()+1;
 const currentDay = d.getDate();
 // console.log(currentDay, currentMonth, currentYear);
 
-document.getElementById("run").addEventListener("click", function getBirthday() {
+document.getElementById("run").addEventListener("click", function () {
    const day = +document.getElementById("dob-day").value;
    const month = +document.getElementById("dob-month").value;
    const year = +document.getElementById("dob-year").value;
